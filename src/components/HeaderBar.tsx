@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { AppBar, Button, ButtonGroup, Toolbar, Typography } from '@mui/material'
-import MenuBookIcon from '@mui/icons-material/MenuBook'
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople'
+import BuildIcon from '@mui/icons-material/Build'
 import NewspaperIcon from '@mui/icons-material/Newspaper'
 import Stack from '@mui/material/Stack'
 
@@ -13,19 +13,19 @@ const HeaderBar: FC = () => {
           Zaki Amin
         </Typography>
         <ButtonGroup variant='contained' color='secondary'>
-          <Button color='secondary'>
+          <Button sx={{ backgroundColor: '#4e2fb5' }}>
             <Stack direction='row' spacing={1}>
               <span>about</span>
               <NewspaperIcon />
-            </Stack>{' '}
-          </Button>
-          <Button color='secondary'>
-            <Stack direction='row' spacing={1}>
-              <span>portfolio</span>
-              <MenuBookIcon />
             </Stack>
           </Button>
-          <Button color='secondary'>
+          <Button sx={{ backgroundColor: '#6b4936' }}>
+            <Stack direction='row' spacing={1}>
+              <span>portfolio</span>
+              <BuildIcon />
+            </Stack>
+          </Button>
+          <Button sx={{ backgroundColor: '#69670e' }}>
             <Stack direction='row' spacing={1}>
               <span>contact</span>
               <EmojiPeopleIcon />
