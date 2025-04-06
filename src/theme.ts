@@ -8,11 +8,21 @@ const theme = createTheme({
       main: '#3f6147',
     },
     secondary: {
-      main: '#7ce6dd',
+      main: '#ac3dd1',
     },
   },
   typography: {
     fontFamily: 'var(--font-roboto)',
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: 'none',
+          fontWeight: 500,
+        },
+      },
+    },
   },
 })
 
