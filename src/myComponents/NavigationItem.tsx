@@ -4,19 +4,23 @@ import {
   NavigationMenuLink,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 
 interface NavigationItemProps {
   name: string
   href: string
+  icon: ReactNode
 }
 
-const NavigationItem: FC<NavigationItemProps> = ({ name, href }) => {
+const NavigationItem: FC<NavigationItemProps> = ({ name, href, icon }) => {
   return (
     <NavigationMenuItem>
       <Link href={href} legacyBehavior passHref>
         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-          {name}
+          <span className='flex items-center gap-2'>
+            <span className='text-lg'>{name}</span>
+            <span>{icon}</span>
+          </span>
         </NavigationMenuLink>
       </Link>
     </NavigationMenuItem>
