@@ -2,6 +2,15 @@ import Subsection from '@/myComponents/Subsection'
 import SkillsBadges from '@/myComponents/SkillsBadges'
 import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from '@/components/ui/breadcrumb'
+import { icons } from 'lucide-react'
 
 export const metadata = {
   title: 'Zaki Amin - About',
@@ -11,8 +20,25 @@ export const metadata = {
 export default function About() {
   return (
     <div className='h-screen flex flex-col py-16 gap-12'>
+      <Breadcrumb className='px-16'>
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink href='/'>
+              <div className='flex items-center gap-2'>
+                <icons.House />
+                Home
+              </div>
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>About</BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+
       <div className='justify-items-center'>
-        <h1 className='text-4xl font-semibold py-2 text-emerald-200'>About</h1>
+        <h1 className='text-4xl font-semibold text-emerald-200'>About</h1>
       </div>
 
       <Subsection title='Current employment'>
