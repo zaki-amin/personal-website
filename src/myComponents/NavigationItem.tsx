@@ -7,20 +7,16 @@ import {
 import { FC, ReactNode } from 'react'
 
 interface NavigationItemProps {
-  name: string
   href: string
   icon: ReactNode
 }
 
-const NavigationItem: FC<NavigationItemProps> = ({ name, href, icon }) => {
+const NavigationItem: FC<NavigationItemProps> = ({ href, icon }) => {
   return (
     <NavigationMenuItem>
       <Link href={href} legacyBehavior passHref>
         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-          <span className='flex items-center gap-2'>
-            <span className='text-xl'>{name}</span>
-            <span>{icon}</span>
-          </span>
+          {icon}
         </NavigationMenuLink>
       </Link>
     </NavigationMenuItem>

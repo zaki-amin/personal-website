@@ -6,23 +6,15 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
 import NavigationItem from '@/myComponents/NavigationItem'
-import { icons } from 'lucide-react'
+import { AboutIcon, ExperienceIcon } from '@/myComponents/IconWithText'
 
 export default function Home() {
   return (
     <div className='flex flex-col items-center justify-center gap-4'>
       <NavigationMenu className='p-4 mt-8'>
         <NavigationMenuList className={navigationMenuTriggerStyle()}>
-          <NavigationItem
-            name='About'
-            href='/about'
-            icon={<icons.BadgeHelp />}
-          />
-          <NavigationItem
-            name='Projects'
-            href='/project'
-            icon={<icons.WalletCards />}
-          />
+          <NavigationItem href='/experience' icon={<ExperienceIcon />} />
+          <NavigationItem href='/about' icon={<AboutIcon />} />
         </NavigationMenuList>
       </NavigationMenu>
 

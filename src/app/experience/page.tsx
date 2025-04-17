@@ -10,35 +10,35 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb'
-import { icons } from 'lucide-react'
+import { FC } from 'react'
+import { ExperienceIcon, HomeIcon } from '@/myComponents/IconWithText'
 
 export const metadata = {
-  title: 'Zaki Amin - About',
-  description: 'The about page of Zaki Amin',
+  title: 'Zaki Amin - Experience',
+  description: 'The experience page of Zaki Amin',
 }
 
-export default function About() {
+const Experience: FC = () => {
   return (
     <div className='h-screen flex flex-col py-16 gap-12'>
       <Breadcrumb className='px-16'>
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink href='/'>
-              <div className='flex items-center gap-2'>
-                <icons.House />
-                Home
-              </div>
+              <HomeIcon />
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbPage>About</BreadcrumbPage>
+            <BreadcrumbPage>
+              <ExperienceIcon />
+            </BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
 
       <div className='justify-items-center'>
-        <h1 className='text-4xl font-semibold text-emerald-200'>About</h1>
+        <h1 className='text-4xl font-semibold text-emerald-200'>Experience</h1>
       </div>
 
       <Subsection title='Current employment'>
@@ -151,3 +151,5 @@ export default function About() {
     </div>
   )
 }
+
+export default Experience
