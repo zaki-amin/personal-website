@@ -1,5 +1,5 @@
 import Subsection from '@/myComponents/Subsection'
-import SkillsBadges from '@/myComponents/SkillsBadges'
+import SkillsBadges from '@/myComponents/experience/SkillsBadges'
 import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import {
@@ -10,7 +10,6 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb'
-import { FC } from 'react'
 import { ExperienceIcon, HomeIcon } from '@/myComponents/IconWithText'
 
 export const metadata = {
@@ -18,7 +17,7 @@ export const metadata = {
   description: 'The experience page of Zaki Amin',
 }
 
-const Experience: FC = () => {
+export default function Experience() {
   return (
     <div className='h-screen flex flex-col py-16 gap-12'>
       <Breadcrumb className='px-16'>
@@ -151,5 +150,3 @@ const Experience: FC = () => {
     </div>
   )
 }
-
-export default Experience
