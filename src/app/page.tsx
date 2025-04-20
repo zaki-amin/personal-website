@@ -1,21 +1,24 @@
 import Image from 'next/image'
 import AllLinks from '@/myComponents/navigation/AllLinks'
+import PageFrame from '@/myComponents/layout/PageFrame'
 
 export default function Home() {
   return (
-    <div className='flex flex-col items-center justify-center gap-4'>
-      <AllLinks />
+    <PageFrame>
+      <div className='flex flex-col items-center justify-center gap-4'>
+        <AllLinks />
 
-      <h1 className='text-4xl font-bold text-green-300'>Zaki Amin</h1>
-      <h3 className='text-2xl'>(zah - key ah - mean)</h3>
+        <h1 className='text-4xl font-bold text-green-300'>Zaki Amin</h1>
+        <h3 className='text-2xl'>(zah - key ah - mean)</h3>
 
-      <Image
-        src='/zaki.jpg'
-        alt='Zaki Amin'
-        width={300}
-        height={300}
-        className='rounded-full'
-      />
-    </div>
+        <Image
+          src='/zaki.jpg'
+          alt='Zaki Amin'
+          width={300}
+          height={300}
+          className='rounded-full'
+        />
+      </div>
+    </PageFrame>
   )
 }

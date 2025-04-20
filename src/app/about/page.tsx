@@ -4,6 +4,7 @@ import Education from '@/myComponents/about/Education'
 import BreadcrumbWithIcon from '@/myComponents/navigation/BreadcrumbWithIcon'
 import PageHeader from '@/myComponents/layout/PageHeader'
 import Hobbies from '@/myComponents/about/Hobbies'
+import PageFrame from '@/myComponents/layout/PageFrame'
 
 export const metadata = {
   title: 'Zaki Amin - About',
@@ -12,17 +13,19 @@ export const metadata = {
 
 export default function About() {
   return (
-    <div className='h-screen flex flex-col py-16 gap-8'>
-      <BreadcrumbWithIcon icon={<AboutIcon />} />
-      <PageHeader title='About' />
+    <PageFrame>
+      <div className='h-screen flex flex-col py-16 gap-8'>
+        <BreadcrumbWithIcon icon={<AboutIcon />} />
+        <PageHeader title='About' />
 
-      <Subsection title='Education'>
-        <Education />
-      </Subsection>
+        <Subsection title='Education'>
+          <Education />
+        </Subsection>
 
-      <Subsection title='Hobbies'>
-        <Hobbies />
-      </Subsection>
-    </div>
+        <Subsection title='Hobbies'>
+          <Hobbies />
+        </Subsection>
+      </div>
+    </PageFrame>
   )
 }
