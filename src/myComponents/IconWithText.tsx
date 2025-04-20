@@ -26,3 +26,7 @@ export const ExperienceIcon: FC = () => {
 export const AboutIcon: FC = () => {
   return <IconWithText icon={<icons.CircleUserRound />} text='About' />
 }
+
+export const ContactIcon: FC = () => {
+  return <IconWithText icon={<icons.Mailbox />} text='Contact' />
+}

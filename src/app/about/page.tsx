@@ -1,16 +1,10 @@
 import Subsection from '@/myComponents/Subsection'
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from '@/components/ui/breadcrumb'
-import { AboutIcon, HomeIcon } from '@/myComponents/IconWithText'
+import { AboutIcon } from '@/myComponents/IconWithText'
 import Education from '@/myComponents/about/Education'
 import { icons } from 'lucide-react'
 import Link from 'next/link'
+import BreadcrumbWithIcon from '@/myComponents/navigation/BreadcrumbWithIcon'
+import PageHeader from '@/myComponents/layout/PageHeader'
 
 export const metadata = {
   title: 'Zaki Amin - About',
@@ -20,25 +14,8 @@ export const metadata = {
 export default function About() {
   return (
     <div className='h-screen flex flex-col py-16 gap-8'>
-      <Breadcrumb className='px-16'>
-        <BreadcrumbList>
-          <BreadcrumbItem>
-            <BreadcrumbLink href='/'>
-              <HomeIcon />
-            </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbPage>
-              <AboutIcon />
-            </BreadcrumbPage>
-          </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
-
-      <div className='justify-items-center'>
-        <h1 className='text-4xl font-semibold text-emerald-200'>About</h1>
-      </div>
+      <BreadcrumbWithIcon icon={<AboutIcon />} />
+      <PageHeader title='About' />
 
       <Subsection title='Education'>
         <Education />

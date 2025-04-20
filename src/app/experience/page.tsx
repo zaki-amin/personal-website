@@ -2,15 +2,9 @@ import Subsection from '@/myComponents/Subsection'
 import SkillsBadges from '@/myComponents/experience/SkillsBadges'
 import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from '@/components/ui/breadcrumb'
-import { ExperienceIcon, HomeIcon } from '@/myComponents/IconWithText'
+import { ExperienceIcon } from '@/myComponents/IconWithText'
+import BreadcrumbWithIcon from '@/myComponents/navigation/BreadcrumbWithIcon'
+import PageHeader from '@/myComponents/layout/PageHeader'
 
 export const metadata = {
   title: 'Zaki Amin - Experience',
@@ -20,25 +14,8 @@ export const metadata = {
 export default function Experience() {
   return (
     <div className='h-screen flex flex-col py-16 gap-12'>
-      <Breadcrumb className='px-16'>
-        <BreadcrumbList>
-          <BreadcrumbItem>
-            <BreadcrumbLink href='/'>
-              <HomeIcon />
-            </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbPage>
-              <ExperienceIcon />
-            </BreadcrumbPage>
-          </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
-
-      <div className='justify-items-center'>
-        <h1 className='text-4xl font-semibold text-emerald-200'>Experience</h1>
-      </div>
+      <BreadcrumbWithIcon icon={<ExperienceIcon />} />
+      <PageHeader title='Experience' />
 
       <Subsection title='Current employment'>
         <div className='space-y-6 px-2'>
