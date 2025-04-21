@@ -20,29 +20,31 @@ const TeachingResponsibilities: FC = () => {
             Postgraduate
           </TabsTrigger>
         </TabsList>
+
         <TabsContent value='undergraduate'>
           <ul className='list-disc pl-8'>
             <li>
               I support and assess development operations (DevOps) via
-              laboratories and code reviews respectively. and supervise
-              human-centred design (HCD) projects.
+              laboratories and code reviews respectively.
             </li>
             <li>
-              I supervise research projects on the topic of learningø analytics.
+              I supervise human-centred design (HCD) projects at the
+              intersection of software engineering and design, in collaboration
+              with the Royal College of Art.
             </li>
           </ul>
         </TabsContent>
+
         <TabsContent value='postgraduate'>
           <ul className='list-disc pl-8'>
             <li>
               I help deliver the Software Systems Engineering module, teaching
               the principles and architecture which underpin creating larger
-              software systems.
+              software systems. Topics include databases, application
+              programming interfaces (APIs), containerisation and microservices.
             </li>
             <li>
-              I supervise human-centred design projects at the intersection of
-              software engineering and design, in collaboration with the Royal
-              College of Art.
+              I supervise research projects in the area of learning analytics.
             </li>
           </ul>
           <p className='text-sm'></p>
