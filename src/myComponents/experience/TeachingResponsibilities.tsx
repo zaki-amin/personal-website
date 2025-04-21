@@ -3,8 +3,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 
 const TeachingResponsibilities: FC = () => {
   return (
-    <div className='space-y-3'>
-      <h3 className='text-lg font-medium'>Teaching Responsibilities</h3>
+    <div className='space-y-2'>
+      <h3 className='font-semibold'>Teaching Responsibilities</h3>
       <Tabs defaultValue='undergraduate' className='w-full'>
         <TabsList className='grid w-full grid-cols-2 '>
           <TabsTrigger
