@@ -4,6 +4,7 @@ import PageHeader from '@/myComponents/layout/PageHeader'
 import Subsection from '@/myComponents/Subsection'
 import HoverLink from '@/myComponents/navigation/HoverLink'
 import PageFrame from '@/myComponents/layout/PageFrame'
+import EmailForm from '@/myComponents/contact/EmailForm'
 
 export const metadata = {
   title: 'Zaki Amin - Contact',
@@ -17,7 +18,7 @@ export default function About() {
         <BreadcrumbWithIcon icon={<ContactIcon />} />
         <PageHeader title='Contact' />
 
-        <Subsection title='Links'>
+        <Subsection title='Profiles'>
           <ul className='list-disc pl-8'>
             <li>
               <HoverLink
@@ -29,6 +30,10 @@ export default function About() {
               <HoverLink href='https://github.com/zaki-amin' text='GitHub' />
             </li>
           </ul>
+        </Subsection>
+
+        <Subsection title='Get In Touch!'>
+          <EmailForm />
         </Subsection>
       </div>
     </PageFrame>
