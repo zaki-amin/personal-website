@@ -38,7 +38,7 @@ const EmailForm: FC = () => {
   })
 
   return (
-    <Card className='px-4'>
+    <Card className='px-4 border-dashed'>
       <>
         <form onSubmit={handleSubmit(onSubmit)}>
           <input

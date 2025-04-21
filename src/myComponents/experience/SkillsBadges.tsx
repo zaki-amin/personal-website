@@ -28,26 +28,28 @@ const SkillsDisplay: FC = () => {
   const skills = {
     languages: [
       { name: 'Python', color: 'bg-sky-600' },
-      { name: 'Java', color: 'bg-red-500' },
+      { name: 'Java', color: 'bg-orange-500' },
       { name: 'TypeScript', color: 'bg-blue-500' },
       { name: 'JavaScript', color: 'bg-yellow-600' },
       { name: 'C', color: 'bg-gray-500' },
       { name: 'Kotlin', color: 'bg-purple-500' },
+      { name: 'Scala', color: 'bg-red-500' },
+      { name: 'Elixir', color: 'bg-purple-700' },
     ],
     frameworks: [
       { name: 'React', color: 'bg-cyan-500' },
       { name: 'Node.js', color: 'bg-green-700' },
       { name: 'Next.js', color: 'bg-black' },
       { name: 'FastAPI', color: 'bg-teal-600' },
-      { name: 'Flask', color: 'bg-gray-700' },
-      { name: 'Django', color: 'bg-emerald-600' },
+      { name: 'Flask', color: 'bg-blue-600' },
+      { name: 'SQLAlchemy', color: 'bg-gray-600' },
       { name: 'PyTorch', color: 'bg-red-700' },
     ],
   }
 
   return (
-    <div className='space-y-6'>
-      <Card>
+    <div>
+      <Card className='border-dotted'>
         <CardContent>
           <div className='space-y-4'>
             <SkillCategory

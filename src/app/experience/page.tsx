@@ -15,7 +15,7 @@ export const metadata = {
 export default function Experience() {
   return (
     <PageFrame>
-      <div className='h-screen flex flex-col py-16 gap-12'>
+      <div className='h-screen flex flex-col py-16 gap-4'>
         <BreadcrumbWithIcon icon={<ExperienceIcon />} />
         <PageHeader title='Experience' />
 
