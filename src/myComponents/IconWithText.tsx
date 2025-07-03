@@ -9,7 +9,7 @@ interface IconWithTextProps {
 const IconWithText: FC<IconWithTextProps> = ({ icon, text }) => {
   return (
     <span className='flex items-center gap-2'>
-      <span className='text-lg text-accent-100'>{text}</span>
+      <span className='text-lg text-accent-200'>{text}</span>
       <span className='text-accent-100'>{icon}</span>
     </span>
   )

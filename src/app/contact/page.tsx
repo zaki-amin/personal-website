@@ -5,6 +5,7 @@ import Subsection from '@/myComponents/Subsection'
 import HoverLink from '@/myComponents/navigation/HoverLink'
 import PageFrame from '@/myComponents/layout/PageFrame'
 import EmailForm from '@/myComponents/contact/EmailForm'
+import { GithubIcon, LinkedinIcon } from 'lucide-react'
 
 export const metadata = {
   title: 'Zaki Amin - Contact',
@@ -24,10 +25,15 @@ export default function About() {
               <HoverLink
                 href='https://www.linkedin.com/in/zaki-amin/'
                 text='LinkedIn'
+                icon={<LinkedinIcon size={14} />}
               />
             </li>
             <li>
-              <HoverLink href='https://github.com/zaki-amin' text='GitHub' />
+              <HoverLink
+                href='https://github.com/zaki-amin'
+                text='GitHub'
+                icon={<GithubIcon size={14} />}
+              />
             </li>
           </ul>
         </Subsection>

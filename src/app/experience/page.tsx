@@ -4,7 +4,6 @@ import { ExperienceIcon } from '@/myComponents/IconWithText'
 import BreadcrumbWithIcon from '@/myComponents/navigation/BreadcrumbWithIcon'
 import PageHeader from '@/myComponents/layout/PageHeader'
 import CurrentRoleSummary from '@/myComponents/experience/CurrentRoleSummary'
-import TeachingResponsibilities from '@/myComponents/experience/TeachingResponsibilities'
 import PageFrame from '@/myComponents/layout/PageFrame'
 import PreviousRole from '@/myComponents/experience/PreviousRole'
 
@@ -16,14 +15,13 @@ export const metadata = {
 export default function Experience() {
   return (
     <PageFrame>
-      <div className='h-screen flex flex-col py-16 gap-4'>
+      <div className='h-screen flex flex-col py-16 gap-8'>
         <BreadcrumbWithIcon icon={<ExperienceIcon />} />
         <PageHeader title='Experience' />
 
         <Subsection title='Current role'>
           <div className='space-y-6 px-2'>
             <CurrentRoleSummary />
-            <TeachingResponsibilities />
           </div>
         </Subsection>
 

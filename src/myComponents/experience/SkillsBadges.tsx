@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import { Badge } from '@/components/ui/badge'
-import { Card, CardContent } from '@/components/ui/card'
 
 interface SkillCategoryProps {
   title: string
@@ -45,24 +44,26 @@ const SkillsDisplay: FC = () => {
       { name: 'SQLAlchemy', color: 'bg-gray-600' },
       { name: 'PyTorch', color: 'bg-red-700' },
     ],
+    general: [
+      { name: 'Organisation', color: 'bg-indigo-500' },
+      { name: 'Planning', color: 'bg-pink-500' },
+      { name: 'Communication', color: 'bg-green-700' },
+      { name: 'Presentations', color: 'bg-orange-800' },
+      { name: 'Teaching', color: 'bg-pink-700' },
+      { name: 'Mentoring', color: 'bg-orange-700' },
+    ],
   }
 
   return (
     <div>
-      <Card className='border-dotted'>
-        <CardContent>
-          <div className='space-y-4'>
-            <SkillCategory
-              title='Programming Languages'
-              items={skills.languages}
-            />
-            <SkillCategory
-              title='Frameworks & Libraries'
-              items={skills.frameworks}
-            />
-          </div>
-        </CardContent>
-      </Card>
+      <div className='space-y-4'>
+        <SkillCategory title='Programming Languages' items={skills.languages} />
+        <SkillCategory
+          title='Frameworks & Libraries'
+          items={skills.frameworks}
+        />
+        <SkillCategory title='General' items={skills.general} />
+      </div>
     </div>
   )
 }

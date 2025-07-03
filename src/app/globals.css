@@ -7,24 +7,24 @@ html, body {
 }
 
 @theme {
-    --color-primary-100: #C4E79A;
-    --color-primary-200: #94C160;
-    --color-primary-300: #6B9A33;
-    --color-primary-400: #477413;
-    --color-primary-500: #294D00;
+    /* Brighter, pastel green */
+    --color-primary-100: #E6F9D5;
+    --color-primary-200: #B8F2A5;
+    --color-primary-300: #8BE47A;
+    --color-primary-400: #5FD65A;
+    --color-primary-500: #3CBF3A;
 
-    /* Secondary color 1 (terracotta/red) */
-    --color-secondary-100: #FFBCAA;
-    --color-secondary-200: #D4806A;
-    --color-secondary-300: #AA5039;
-    --color-secondary-400: #802B15;
-    --color-secondary-500: #551200;
+    /* Brighter, pastel purple */
+    --color-accent-100: #E9D6F7;
+    --color-accent-200: #D1A8EC;
+    --color-accent-300: #B97BE1;
+    --color-accent-400: #A05DD1;
+    --color-accent-500: #7B3FA7;
 
-    /* Secondary color 2 (purple) */
-    --color-accent-100: #A071A8;
-    --color-accent-200: #82478C;
-    --color-accent-300: #652770;
-    --color-accent-400: #4A1054;
-    --color-accent-500: #300138;
+    /* Brighter, pastel secondary (peach/pink) */
+    --color-secondary-100: #FFE3EC;
+    --color-secondary-200: #FFB8D2;
+    --color-secondary-300: #FF8CBA;
+    --color-secondary-400: #F364A2;
+    --color-secondary-500: #E8367C;
 }
-
