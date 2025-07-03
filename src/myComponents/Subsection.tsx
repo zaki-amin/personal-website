@@ -5,8 +5,6 @@ interface SubsectionProps {
   children: ReactNode
 }
 
-;``
-
 const Subsection: FC<SubsectionProps> = ({ title, children }) => {
   return (
     <div className='px-16 md:px-32'>

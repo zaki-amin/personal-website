@@ -26,8 +26,8 @@ const Research: FC = () => {
         />
         .<br />
         Co-author of 3 papers on software engineering education with fellow
-        members of the Department of Computing's Educational Technology lab at
-        Imperial College London.
+        members of the Department of Computing&#39;s Educational Technology lab
+        at Imperial College London.
       </p>
 
       <div className='space-y-2'>
