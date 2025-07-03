@@ -15,33 +15,31 @@ export const metadata = {
 export default function About() {
   return (
     <PageFrame>
-      <div className='h-screen flex flex-col py-16 gap-8'>
-        <BreadcrumbWithIcon icon={<ContactIcon />} />
-        <PageHeader title='Contact' />
+      <BreadcrumbWithIcon icon={<ContactIcon />} />
+      <PageHeader title='Contact' />
 
-        <Subsection title='Profiles'>
-          <ul className='list-disc pl-8'>
-            <li>
-              <HoverLink
-                href='https://www.linkedin.com/in/zaki-amin/'
-                text='LinkedIn'
-                icon={<LinkedinIcon size={14} />}
-              />
-            </li>
-            <li>
-              <HoverLink
-                href='https://github.com/zaki-amin'
-                text='GitHub'
-                icon={<GithubIcon size={14} />}
-              />
-            </li>
-          </ul>
-        </Subsection>
+      <Subsection title='Profiles'>
+        <ul className='list-disc pl-8'>
+          <li>
+            <HoverLink
+              href='https://www.linkedin.com/in/zaki-amin/'
+              text='LinkedIn'
+              icon={<LinkedinIcon size={14} />}
+            />
+          </li>
+          <li>
+            <HoverLink
+              href='https://github.com/zaki-amin'
+              text='GitHub'
+              icon={<GithubIcon size={14} />}
+            />
+          </li>
+        </ul>
+      </Subsection>
 
-        <Subsection title='Get In Touch!'>
-          <EmailForm />
-        </Subsection>
-      </div>
+      <Subsection title='Get In Touch!'>
+        <EmailForm />
+      </Subsection>
     </PageFrame>
   )
 }

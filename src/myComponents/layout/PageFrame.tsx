@@ -5,7 +5,7 @@ interface PageFrameProps {
 }
 
 const PageFrame: FC<PageFrameProps> = ({ children }) => {
-  return <div className='p-4 md:p-8 lg:p-12'>{children}</div>
+  return <div className='min-h-screen flex flex-col py-16 gap-8'>{children}</div>
 }
 
 export default PageFrame

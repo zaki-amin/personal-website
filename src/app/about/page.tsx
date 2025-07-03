@@ -14,18 +14,16 @@ export const metadata = {
 export default function About() {
   return (
     <PageFrame>
-      <div className='h-screen flex flex-col py-16 gap-8'>
-        <BreadcrumbWithIcon icon={<AboutIcon />} />
-        <PageHeader title='About' />
+      <BreadcrumbWithIcon icon={<AboutIcon />} />
+      <PageHeader title='About' />
 
-        <Subsection title='Education'>
-          <Education />
-        </Subsection>
+      <Subsection title='Education'>
+        <Education />
+      </Subsection>
 
-        <Subsection title='Hobbies'>
-          <Hobbies />
-        </Subsection>
-      </div>
+      <Subsection title='Hobbies'>
+        <Hobbies />
+      </Subsection>
     </PageFrame>
   )
 }
