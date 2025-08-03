@@ -4,20 +4,19 @@ import { FC, ReactNode } from 'react'
 interface IconWithTextProps {
   icon: ReactNode
   text: string
-  isHome?: boolean
 }
 
-const IconWithText: FC<IconWithTextProps> = ({ icon, text, isHome }) => {
+const IconWithText: FC<IconWithTextProps> = ({ icon, text }) => {
   return (
     <span className='flex items-center gap-2'>
-      <span className={isHome ? 'text-lg text-primary-200' : 'text-lg text-accent-200'}>{text}</span>
-      <span className={isHome ? 'text-primary-100' : 'text-accent-100'}>{icon}</span>
+      <p className='text-lg'>{text}</p>
+      <span>{icon}</span>
     </span>
   )
 }
 
 export const HomeIcon: FC = () => {
-  return <IconWithText icon={<icons.House />} text='Home' isHome/>
+  return <IconWithText icon={<icons.House />} text='Home' />
 }
 
 export const ExperienceIcon: FC = () => {
