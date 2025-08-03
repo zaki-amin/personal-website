@@ -2,21 +2,20 @@ import Link from 'next/link'
 import {
   NavigationMenuItem,
   NavigationMenuLink,
-  navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
 import { FC, ReactNode } from 'react'
 
 interface NavigationItemProps {
   href: string
-  icon: ReactNode
+  content: ReactNode
 }
 
-const NavigationItem: FC<NavigationItemProps> = ({ href, icon }) => {
+const NavigationItem: FC<NavigationItemProps> = ({ href, content }) => {
   return (
     <NavigationMenuItem>
       <Link href={href} legacyBehavior passHref>
-        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-          {icon}
+        <NavigationMenuLink className='hover:text-blue-400'>
+          {content}
         </NavigationMenuLink>
       </Link>
     </NavigationMenuItem>

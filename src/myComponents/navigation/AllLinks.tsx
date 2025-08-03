@@ -2,7 +2,6 @@ import { FC } from 'react'
 import {
   NavigationMenu,
   NavigationMenuList,
-  navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
 import NavigationItem from '@/myComponents/navigation/NavigationItem'
 import {
@@ -14,10 +13,10 @@ import {
 const AllLinks: FC = () => {
   return (
     <NavigationMenu className='p-4 mt-8'>
-      <NavigationMenuList className={navigationMenuTriggerStyle()}>
-        <NavigationItem href='/experience' icon={<ExperienceIcon />} />
-        <NavigationItem href='/about' icon={<AboutIcon />} />
-        <NavigationItem href='/contact' icon={<ContactIcon />} />
+      <NavigationMenuList className='gap-8'>
+        <NavigationItem href='/experience' content={<ExperienceIcon />} />
+        <NavigationItem href='/about' content={<AboutIcon />} />
+        <NavigationItem href='/contact' content={<ContactIcon />} />
       </NavigationMenuList>
     </NavigationMenu>
   )
