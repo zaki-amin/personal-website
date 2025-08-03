@@ -3,7 +3,6 @@ import BreadcrumbWithIcon from '@/myComponents/navigation/BreadcrumbWithIcon'
 import PageHeader from '@/myComponents/layout/PageHeader'
 import Subsection from '@/myComponents/Subsection'
 import HoverLink from '@/myComponents/navigation/HoverLink'
-import PageFrame from '@/myComponents/layout/PageFrame'
 import EmailForm from '@/myComponents/contact/EmailForm'
 import { GithubIcon, LinkedinIcon } from 'lucide-react'
 
@@ -14,7 +13,7 @@ export const metadata = {
 
 export default function About() {
   return (
-    <PageFrame>
+    <>
       <BreadcrumbWithIcon icon={<ContactIcon />} />
       <PageHeader title='Contact' />
 
@@ -40,6 +39,6 @@ export default function About() {
       <Subsection title='Get In Touch!'>
         <EmailForm />
       </Subsection>
-    </PageFrame>
+    </>
   )
 }

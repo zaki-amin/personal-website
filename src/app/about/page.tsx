@@ -4,7 +4,6 @@ import Education from '@/myComponents/about/Education'
 import BreadcrumbWithIcon from '@/myComponents/navigation/BreadcrumbWithIcon'
 import PageHeader from '@/myComponents/layout/PageHeader'
 import Hobbies from '@/myComponents/about/Hobbies'
-import PageFrame from '@/myComponents/layout/PageFrame'
 
 export const metadata = {
   title: 'Zaki Amin - About',
@@ -13,7 +12,7 @@ export const metadata = {
 
 export default function About() {
   return (
-    <PageFrame>
+    <>
       <BreadcrumbWithIcon icon={<AboutIcon />} />
       <PageHeader title='About' />
 
@@ -24,6 +23,6 @@ export default function About() {
       <Subsection title='Hobbies'>
         <Hobbies />
       </Subsection>
-    </PageFrame>
+    </>
   )
 }

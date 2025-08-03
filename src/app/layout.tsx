@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import { ReactNode } from 'react'
 import './globals.css'
 import { Toaster } from '@/components/ui/sonner'
+import PageFrame from '@/myComponents/layout/PageFrame'
 
 const inter = Inter({
   variable: '--font-inter',
@@ -22,7 +23,9 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${inter.variable} antialiased`}>
-        <main>{children}</main>
+        <main>
+          <PageFrame>{children}</PageFrame>
+        </main>
         <Toaster position='top-right' />
       </body>
     </html>

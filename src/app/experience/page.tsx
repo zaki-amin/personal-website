@@ -4,7 +4,6 @@ import { ExperienceIcon } from '@/myComponents/IconWithText'
 import BreadcrumbWithIcon from '@/myComponents/navigation/BreadcrumbWithIcon'
 import PageHeader from '@/myComponents/layout/PageHeader'
 import CurrentRoleSummary from '@/myComponents/experience/CurrentRoleSummary'
-import PageFrame from '@/myComponents/layout/PageFrame'
 import PreviousRole from '@/myComponents/experience/PreviousRole'
 
 export const metadata = {
@@ -14,7 +13,7 @@ export const metadata = {
 
 export default function Experience() {
   return (
-    <PageFrame>
+    <>
       <BreadcrumbWithIcon icon={<ExperienceIcon />} />
       <PageHeader title='Experience' />
 
@@ -42,6 +41,6 @@ export default function Experience() {
           />
         </div>
       </Subsection>
-    </PageFrame>
+    </>
   )
 }

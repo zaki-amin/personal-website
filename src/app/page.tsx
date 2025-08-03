@@ -1,10 +1,9 @@
 import Image from 'next/image'
 import AllLinks from '@/myComponents/navigation/AllLinks'
-import PageFrame from '@/myComponents/layout/PageFrame'
 
 export default function Home() {
   return (
-    <PageFrame>
+    <>
       <div className='flex flex-col items-center justify-center gap-4'>
         <AllLinks />
 
@@ -19,6 +18,6 @@ export default function Home() {
           className='rounded-full'
         />
       </div>
-    </PageFrame>
+    </>
   )
 }
